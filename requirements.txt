@@ -1,0 +1,7 @@
+Flask
+python-dotenv
+pymongo
+dnspython
+python-docx
+MarkupSafe
+gunicorn
