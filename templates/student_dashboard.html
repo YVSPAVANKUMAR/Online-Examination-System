@@ -313,6 +313,12 @@ function updateTimer(testId, examDateIso, duration) {
         return;
     }
 
+    if (now >= endTime && !startedAt) {
+        timerElement.textContent = "Test Ended!";
+        timerElement.className = 'text-2xl font-bold text-red-600';
+        return;
+    }
+
     if (!startedAt) {
         timerElement.textContent = "Ready to Start";
         timerElement.className = 'text-2xl font-bold text-green-600';
